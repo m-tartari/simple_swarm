@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<launch>
+      <param name="/world_size" value="2"/>
+
+      <!--key caputre node-->
+      <node pkg="capture_key" type="capture_key_node" name="capture_key">
+      </node>
+      
+      <!--red swarm-->
+      <group ns="red">
+            <node pkg="swarm" type="swarm_behavior" name="red_swarm_behav">
+                  <param name="/move_key" type="int" value="114"/>
+            </node>
+
+            <node pkg="swarm" type="swarm_node" name="red_swarm_1">
+            </node>
+            <node pkg="swarm" type="swarm_node" name="red_swarm_2">
+            </node>
+            <node pkg="swarm" type="swarm_node" name="red_swarm_3">
+            </node>
+            <node pkg="swarm" type="swarm_node" name="red_swarm_4">
+            </node>
+            <node pkg="swarm" type="swarm_node" name="red_swarm_5">
+            </node>
+      
+      </group>
+
+      <!--blue swarm-->
+      <group ns="blue">
+            <node pkg="swarm" type="swarm_behavior" name="blue_swarm_behav">
+                  <param name="/move_key" type="int" value="98"/>
+            </node>
+
+            <node pkg="swarm" type="swarm_node" name="blue_swarm_1">
+            </node>
+            <node pkg="swarm" type="swarm_node" name="blue_swarm_2">
+            </node>
+            <node pkg="swarm" type="swarm_node" name="blue_swarm_3">
+            </node>
+            <node pkg="swarm" type="swarm_node" name="blue_swarm_4">
+            </node>
+            <node pkg="swarm" type="swarm_node" name="blue_swarm_5">
+            </node>
+            
+      </group>
+
+</launch>
+

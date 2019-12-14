@@ -1,0 +1,10 @@
+The package allows to simulate and visualize the behavior of swarms of
+individuals (in a very very rough way, which is merely a pretext for the
+evaluation). Here, the individuals follow a virtual leader, which is
+a point in the x,y plane that can be randomly reset.
+
+The swarm_node type corresponds to one individual of the swarm.
+The swarm_behavior type represents the virtual leader of the swarm and
+is used to randomly reset the virtual leader when a certain key is hit.
+Typically, capture_key is used to transmit the keystrokes to 
+swarm_behavior nodes.
